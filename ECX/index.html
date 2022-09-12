@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>ECX</title>
+    <script src="./js/index.js"></script>
+  </head>
+  <body>
+    <!--Cabeçalho -->
+    <section class="navbar navbar-expand-sm" id="cabecalho">
+      <img src="./img/logo.png" alt=" logo" class="logo" />
+      <a
+      onclick="mudarBeneficio('is_colaborador')"
+        class="btn btn-outline-warning btn-cabecalho ml-auto d-none d-sm-none d-md-block"
+      >
+        Contrate para sua empresa
+    </a>
+      <a
+      onclick="mudarBeneficio('is_rh')"
+        class="btn btn-outline-warning btn-cabecalho btn-2 d-none d-sm-none d-md-block"
+      >
+        Indique para seu RH
+  </a>
+    </section>
+
+    <!--Section Dia de Pagamento -->
+    <section id="dia-de-pagamento">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-12 col-sm-12 col-lg-6 dia-de-pagamento-container order-2 order-lg-1"
+          >
+            <h1>Qualquer dia é dia de pagamento.</h1>
+            <p>
+              O salário sob demanda é um novo conceito de beneficio que veio
+              para melhorar a saúde financeira da sua equipe
+              <strong> sem aumentar custos para sua empresa </strong>
+            </p>
+            <a class="btn btn-outline-light btn-dia-de-pagamento" onclick="mudarBeneficio('is_rh')">
+              Contrate para sua empresa
+            </a>
+            <a class="btn btn-outline-light btn-dia-de-pagamento" onclick="mudarBeneficio('is_colaborador')">
+              Indique para seu RH
+            </a>
+          </div>
+          <div
+            class="col-12 col-md-6 d-none d-lg-none d-xl-block order-1 order-lg-2 d-flex justify-content-center"
+            id="balao"
+          >
+            <div class="balao">
+              <p>Salário sob <strong>Demanda</strong></p>
+            </div>
+            <img
+              src="./img/home.png"
+              alt="home-1"
+              class="home-1 d-none d-md-none d-lg-block"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Colaborador-Feliz-->
+    <section id="colaborador-feliz">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-9 texto">
+            <h2>
+              Colaborador feliz, RH inovador. Benefícios que
+              <strong> libertam.</strong>
+            </h2>
+          </div>
+          <div class="col-12 col-lg-1 offset-lg-2 d-none d-md-none d-lg-block">
+            <img src="./img/ic_card.png" alt="card" />
+            <p>salário sob demanda</p>
+          </div>
+          <div class="col-12 col-lg-7 order-2 order-lg-1 lista beneficios" data-value="is_rh" data-id="lista">
+            <div class="row">
+              <div class="col-6 cta-site">
+                <h3 onclick="mudarBeneficio('is_rh')">Para o RH</h3>
+              </div>
+              <div class="col-6 cta-site">
+                <h3 onclick="mudarBeneficio('is_colaborador')">Para o colaborador</h3>
+              </div>
+              <div class="col-12 linha-botto-col">
+                <div class="linha-bottom"></div>
+              </div>
+            </div>
+            <ul id="lista1" class="lista-block">
+              <li>
+                <img
+                  src="./img/ic_colaboradores-1.png"
+                  alt="colaboradores"
+                  class="img-lista"
+                />
+                Sem custo e sem fidelidade
+              </li>
+              <li>
+                <img src="img/ic_dividas.png" alt="dividas" class="img-lista" />
+                Agrega um diferencial a cesta de benefícios
+              </li>
+              <li>
+                <img src="./img/ic_mobile.png" alt="mobile" class="img-lista" />
+                Elimina vales adiantamento em papel
+              </li>
+              <li>
+                <img
+                  src="./img/ic_personalizar.png"
+                  alt="personalizar"
+                  class="img-lista"
+                />
+                Benefício personalizável e flexível
+              </li>
+              <li>
+                <img
+                  src="./img/ic_colaboradores.png"
+                  alt="colaboradores"
+                  class="img-lista"
+                />
+                Colaboradores mais engajados e produtivos
+              </li>
+              <button class="btn bg-warning">Leve para sua empresa</button>
+            </ul>
+            <ul id="lista2" class="lista-none" >
+              <li>
+                <img
+                  src="./img/ic_felicidade.png"
+                  alt="felicidade"
+                  class="img-lista"
+                />
+                Mais felicidade e saúde mental
+              </li>
+              <li>
+                <img src="img/ic_pix.png" alt="pix" class="img-lista" />
+                Dinheiro para imprevistos(pix)
+              </li>
+              <li>
+                <img
+                  src="./img/ic_dividas.png"
+                  alt="dividas"
+                  class="img-lista"
+                />
+                Evita dívidas e juros abusivos
+              </li>
+              <li>
+                <img
+                  src="./img/ic_beneficios.png"
+                  alt="beneficios"
+                  class="img-lista"
+                />
+                Um benefício inovador e flexível
+              </li>
+              <li>
+                <img
+                  src="./img/ic_controle.png"
+                  alt="controles"
+                  class="img-lista"
+                />
+                Controle e alívio financeiro
+              </li>
+              <button class="btn bg-warning">Leve para sua empresa</button>
+            </ul>
+            
+          </div>
+          <div class="col-12 col-lg-5 order-1 order-lg-2 beneficio-celular">
+            <img src="./img/beneficio-celular.png" alt="beneficio-celular" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como funciona-->
+    <section id="como-funciona">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center texto">
+            <span>Como funciona</span>
+            <h2>
+              A forma de receber salário em 2021 não pode ser igual a de 1940
+            </h2>
+            <p>
+              O salário sob demanda é uma modalidade de pagamento flexível que
+              ajuda os colaboradores a manter as contas pagas, tudo com o
+              próprio salário pelo app, sem ter que recorrer às instituições
+              financeiras tradicionais.
+            </p>
+          </div>
+          <div class="col-12 colaborador-salario">
+            <div class="d-flex">
+              <div class="col-6 col-lg-2 elementos">
+                <h3>05 . 10</h3>
+                <p>Colaborador recebe o salário</p>
+              </div>
+              <div class="col-6 col-lg-3 offset-4 offset-lg-1">
+                <h3>20 . 10</h3>
+                <p>
+                  colaborador adianta seu salário para pagar uma conta ou
+                  resolver um imprevisto.
+                </p>
+              </div>
+              <div
+                class="col-6 col-lg-3 offset-10 offset-sm-9 offset-lg-3 elementos"
+              >
+                <h3>05 . 12</h3>
+                <p>
+                  Após 45 dias o valor adiantado é descontado em folha
+                  oferecendo alívio financeiro.
+                </p>
+              </div>
+            </div>
+            <img src="./img/img-chart.png" alt="chart" />
+          </div>
+          <div class="col-12 text-center seu-salario">
+            <h2>
+              Seu <span>salário</span> quando <br />
+              você precisar.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section quero aderir-->
+    <section id="quero-aderir">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center texto">
+            <p>Quero aderir</p>
+            <h2>
+              Você está a poucos passos de uma nova experiência com
+              <strong>benefícios</strong>
+            </h2>
+          </div>
+          <div class="col-12  col-md-6 ">
+            <div class="caixa">
+              <div class="item">
+                <img src="./img/ic_mobile.png" alt="mobile">
+                <h2> Inovador e flexivel </h2>
+                <p>Lorem ipsum dolor sit amet, conse.</p>
+              </div>
+              <hr size="10">
+               <div class="item">
+                 <img src="./img/ic_pix.png" alt="pix">
+                 <h2> O primeiro do Brasil com Pix</h2>
+                 <p>Lorem ipsum dolor sit amet, conse.</p>              
+               </div>
+               <hr size="10">
+               <div class="item">
+                <img src="./img/ic_colaboradores.png" alt="colaboradores">
+                <h2>Colaboradores engajados e produtivos</h2>
+                <p>Lorem ipsum dolor sit amet, conse.</p>
+               </div>
+            </div>
+
+            </div>
+          <div class="col-12 col-md-6 beneficios" data-value="is_rh" data-id="form">
+            <div class="row">
+              <div class="col-6 cta-site">
+                <h3 onclick="mudarBeneficio('is_rh')">Sou RH</h3>
+              </div>
+              <div class="col-6 cta-site">
+                <h3 onclick="mudarBeneficio('is_colaborador')"> Sou Funcionário</h3>
+              </div>
+              <div class="col-12 linha-botto-col">
+                <div class="linha-bottom"></div>
+              </div>
+            </div>
+    
+            <form id="form1" class="lista-block">
+              <div class=" col-12 col-md-12 form">
+                <div class="form-group">
+                  <label for="Nome Completo">Nome Completo</label>
+                  <input type="text" class="form-control  form-control-lg" id="Nome Completo" placeholder="Nome Completo">
+                </div>
+                <div class="form-group">
+                  <label for="Telefone">Telefone</label>
+                  <input type="Telefone" class="form-control  form-control-lg" id="Telefone" placeholder="Telefone para contato, ex: (00) 00000-0000">
+                </div>
+                <div class="form-group">
+                  <label for="Email">Seu e-mail corporativo</label>
+                  <input type="email" class="form-control  form-control-lg" id="email" placeholder="Seu e-mail corporativo">
+                </div>
+                <div class="form-group">
+                  <label for="Sua empresa">Sua empresa</label>
+                  <input type="text" class="form-control  form-control-lg" id="Sua empresa" placeholder="Nome da sua empresa">
+                </div>
+                <div class="form-group">
+                  <label for="Seu-cargo">Seu cargo</label>
+                  <select class="form-control  form-control-lg"" id="Seu cargo">
+                    <option>Escolha seu cargo de atuação</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="Número de funcionários">Número de funcionários</label>
+                  <select class="form-control form-control-lg" id="Número de funcionários">
+                    <option>Quantidade de funcionários atualmente</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <a type="submit" class="btn btn-lg btn-warning">Enviar</a>
+              </div>
+            </form>
+            
+            <!--Formulario2 -->
+            <form id="form2" class="lista-none">
+              <div class=" col-12 col-md-12 form" >
+
+                  <div class="form-group">
+                    <label for="Nome Completo">Nome Completo</label>
+                    <input type="text" class="form-control  form-control-lg" id="Nome Completo" placeholder="Nome Completo">
+                  </div>
+                  <div class="form-group">
+                    <label for="Telefone">Telefone</label>
+                    <input type="Telefone" class="form-control  form-control-lg" id="Telefone" placeholder="Telefone para contato, ex: (00) 00000-0000">
+                  </div>
+                  <div class="form-group">
+                    <label for="responsavel">Nome do responsável por benefícios</label>
+                    <input type="text" class="form-control  form-control-lg" id="reponsavel" placeholder="Responsável por benefícios">
+                  </div>
+                  <div class="form-group">
+                    <label for="Celular reponsavel">Celular do responsável por benefícios</label>
+                    <input type="text" class="form-control  form-control-lg" id="Celular reponsavel" placeholder="Responsável por benefícios, ex: (00) 00000-0000">
+                  </div>
+                  <div class="form-group">
+                    <label for="Nome empresa">Nome da empresa em que você trabalha</label>
+                    <input type="text" class="form-control  form-control-lg" id="Nome empresa" placeholder="Nome da sua empresa">
+                  </div>
+                  <div class="form-group">
+                    <label for="Número de funcionários">Número de funcionários aproximados</label>
+                    <select class="form-control form-control-lg" id="Número de funcionários">
+                      <option>Quantidade de funcionários atualmente</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <a type="submit" class="btn btn-warning">Enviar</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section rodape -->
+    <section id="rodape">
+      <hr width="100%">
+      <div class="container rodape">
+        <div class="row">
+          <div class="col-12  col-xl-2 logo2">
+            <img src="./img/logo.png" alt="logo" >
+          </div>
+          <div class=" col-12  col-xl-8  d-xl-flex termo ">
+            <p>Termos de uso <span>.</span></p> 
+            <p> de  privacidade</p>
+          </div>
+          <div class="col-11 col-xl-2 d-xl-flex rodape-icons  ">
+            <img src="./img/ic_instagra.svg" alt="instagram" class="img-rodape">
+            <img src="./img/ic_faceboo.svg" alt="facebook" class="img-rodape">
+            <img src="./img/ic_twitter.svg" alt="twitter" class="img-rodape">
+            <p><strong>/</strong> ecxcard</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

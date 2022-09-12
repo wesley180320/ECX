@@ -1,0 +1,862 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Formtação de fontes */
+
+@font-face {
+  font-family: "GalanoGrotesquebold";
+  src: url(../fonts/GalanoGrotesqueBold.otf);
+}
+
+@font-face {
+  font-family: "GalanoGrotesque";
+  src: url(../fonts/GalanoGrotesqueLight.otf);
+}
+
+body h1 {
+  font-family: "GalanoGrotesquebold";
+}
+
+body p {
+  font-family: "GalanoGrotesque";
+}
+
+body button {
+  font-family: "GalanoGrotesque";
+}
+
+body a {
+  font-family: "GalanoGrotesque";
+}
+
+body h2 {
+  font-family: "GalanoGrotesquebold";
+}
+
+body h3 {
+  font-family: "GalanoGrotesquebold";
+}
+
+body li {
+  font-family: "GalanoGrotesque";
+}
+
+/* Cabecalho */
+
+#cabecalho {
+  background-color: white;
+}
+
+#cabecalho a {
+  color: #ffb71a;
+}
+.logo {
+  height: auto;
+  width: auto;
+  margin: 24px;
+  margin-left: 153px;
+  width: 132px;
+  height: 32px;
+}
+.btn-cabecalho {
+  padding: 13px;
+  margin-right: 16px;
+  border-radius: 10px;
+}
+
+#cabecalho .btn-2 {
+  margin-right: 112px;
+}
+
+#cabecalho a:hover {
+  color: #ffffff;
+}
+
+/* Section dia de pagamento */
+#dia-de-pagamento {
+  background-image: url("../img/home-1.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: #010068;
+  color: #ffffff;
+}
+
+#dia-de-pagamento img {
+  margin-top: 47px;
+  height: auto;
+  width: 100%;
+}
+
+#dia-de-pagamento .dia-de-pagamento-container h1 {
+  margin-top: 148px;
+  font: bold;
+  font-size: 45px;
+}
+
+#dia-de-pagamento .dia-de-pagamento-container p {
+  font-size: 16px;
+}
+
+#dia-de-pagamento .dia-de-pagamento-container strong {
+  color: #ffb71a;
+  font-size: 20px;
+}
+
+#dia-de-pagamento a {
+  margin-top: 48px;
+}
+
+#dia-de-pagamento a:hover {
+  color: #000066;
+}
+
+.btn-dia-de-pagamento {
+  padding: 15px;
+  border-radius: 10px;
+  margin-right: 24px;
+}
+
+.balao {
+  padding: 16px;
+  border-radius: 16px 16px 16px 0;
+  width: 163px;
+  height: 81px;
+  background-color: #ffffff;
+  color: #2d2935;
+  position: absolute;
+  margin-top: 250px;
+  margin-left: 322px;
+}
+
+.balao p {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "GalanoGrotesquebold";
+}
+
+.balao strong {
+  background: linear-gradient(#fff 40%, #ffb71a);
+}
+
+/* section colaborador-feliz */
+
+#colaborador-feliz {
+  padding-top: 124px;
+  padding-bottom: 124px;
+}
+
+#colaborador-feliz strong {
+  background: linear-gradient(#fff 40%, #ffb71a);
+}
+
+#colaborador-feliz h2 {
+  font-size: 48px;
+}
+
+#colaborador-feliz p {
+  color: #0047ba;
+  font-size: 18px;
+}
+
+#colaborador-feliz .para-o-rh {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 86px;
+  flex-wrap: wrap;
+}
+
+#colaborador-feliz .para-o-rh h3 {
+  color: #9d9aad;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 20px;
+}
+
+#colaborador-feliz li {
+  list-style: none;
+  font-size: 20px;
+  color: #2d2935;
+  font-weight: bold;
+  margin-top: 69px;
+}
+
+#colaborador-feliz .img-lista {
+  margin-right: 32px;
+}
+
+#colaborador-feliz .beneficio-celular img {
+  margin-top: 56px;
+  height: auto;
+  width: 100%;
+}
+
+#colaborador-feliz .linha1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+  border-bottom: 5px solid red;
+  transition: 1s;
+}
+
+#colaborador-feliz button {
+  margin-top: 82px;
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#colaborador-feliz .linha {
+  border: 0.1px solid #9d9aad;
+  margin-top: 33px;
+  width: 100%;
+}
+
+#colaborador-feliz .lista h3:hover {
+  color: #0047ba;
+}
+
+#colaborador-feliz .lista {
+  padding: 40px;
+}
+
+/* Section como funciona */
+
+#como-funciona {
+  background-image: url("../img/img-003.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: #010068;
+  background-size: 80%;
+}
+
+#como-funciona .texto {
+  margin-top: 124px;
+  margin-bottom: 130px;
+}
+
+#como-funciona span {
+  color: #ffb71a;
+  font-size: 16px;
+}
+
+#como-funciona h2 {
+  color: #ffffff;
+  font-size: 32px;
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+#como-funciona p {
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+#como-funciona h3 {
+  color: #ffb71a;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#como-funciona .colaborador-salario {
+  margin-top: 124px;
+}
+
+#como-funciona .seu-salario {
+  align-items: center;
+  padding: 128px;
+}
+
+#como-funciona .seu-salario h2 {
+  font-size: 78px;
+}
+
+#como-funciona .seu-salario h2 span {
+  font-size: 78px;
+}
+
+.seu-salario {
+  margin-top: 183px;
+}
+
+/* Section quero aderir */
+
+#quero-aderir .texto {
+  margin-top: 124px;
+  margin-bottom: 131px;
+}
+
+#quero-aderir .texto p {
+  color: #ffb71a;
+  font-size: 16px;
+}
+
+#quero-aderir .texto strong {
+  background: linear-gradient(#fff 40%, #ffb71a);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#quero-aderir .texto h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#quero-aderir .caixa {
+  box-shadow: 0 1px 9px rgb(0 0 0 / 22%), 0 5px 6px rgb(0 0 0 / 22%);
+  border-radius: 16px;
+  width: 426px;
+}
+
+#quero-aderir .caixa .item {
+  padding: 20px;
+}
+
+#quero-aderir .caixa .item h2 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px;
+}
+
+#quero-aderir .caixa .item p {
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+#quero-aderir .sou-rh {
+  justify-content: space-evenly;
+  margin-top: 130px;
+}
+
+#quero-aderir .hover-rh:hover h3 {
+  color: #0047ba;
+}
+.hover-rh:hover hr {
+  background-color: #0047ba;
+}
+
+#quero-aderir .sou-rh h3 {
+  color: #9d9aad;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+#quero-aderir .form {
+  margin-top: 56px;
+}
+
+#quero-aderir .form label {
+  color: #9d9aad;
+}
+
+#quero-aderir .form a {
+  color: #ffffff;
+  width: 100%;
+  margin-top: 64px;
+  padding: 15px;
+}
+
+#quero-aderir .form select {
+  color: #0047ba;
+  height: 62px;
+  border-radius: 10px;
+}
+
+#quero-aderir .form option {
+  color: #47389c;
+}
+
+#quero-aderir .form ::placeholder {
+  color: #9d9aad;
+  padding: 5px;
+}
+
+#quero-aderir .form input {
+  height: 62px;
+  border-radius: 10px;
+}
+
+#rodape {
+  margin-top: 124px;
+}
+
+#rodape .rodape .logo2 {
+  margin-top: 48px;
+}
+
+#rodape .rodape .termo p {
+  padding: 55px;
+  font-size: 16px;
+  color: #2d2935;
+}
+
+#rodape .rodape .rodape-icons {
+  margin-top: 58px;
+}
+
+#rodape .rodape .rodape-icons strong {
+  color: #ffb71a;
+}
+
+#rodape .rodape .rodape-icons p {
+  font-size: 16px;
+  color: #0047ba;
+}
+
+#rodape .img-rodape {
+  height: 16px;
+  margin-right: 10px;
+}
+
+.beneficios h3 {
+  text-align: center;
+  color: #9d9aad;
+  font-size: 22px;
+  cursor: pointer;
+}
+.beneficios[data-value="is_rh"] .cta-site:first-child h3,
+.beneficios[data-value="is_colaborador"] .cta-site:nth-child(2) h3 {
+  color: #0047ba;
+}
+.beneficios .linha-botto-col {
+  padding: 0;
+}
+.beneficios .linha-bottom {
+  width: 100%;
+  height: 2px;
+  background: #e5e5e5;
+  position: relative;
+}
+.beneficios .linha-bottom::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: #0047ba;
+  transition: 1s;
+  left: 0;
+}
+.beneficios #lista1,
+.beneficios[data-value="is_colaborador"] #lista2,
+.beneficios #form1,
+.beneficios[data-value="is_colaborador"] #form2 {
+  animation-name: fadein;
+  animation-duration: 1s;
+}
+.beneficios #lista2,
+.beneficios[data-value="is_colaborador"] #lista1,
+.beneficios #form2,
+.beneficios[data-value="is_colaborador"] #form1 {
+  animation-name: fadeout;
+  animation-duration: 1s;
+}
+.beneficios[data-value="is_colaborador"] .linha-bottom::before {
+  transition: 1s;
+  left: 50%;
+}
+.lista-block {
+  opacity: 1;
+  display: block;
+}
+.lista-none {
+  opacity: 0;
+  display: none;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    display: none;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+#rodape .rodape .termo{
+
+  align-items: flex-end;
+}
+
+#rodape .rodape .termo p {
+  padding: 3px;
+  font-size: 16px;
+  color: #2d2935;
+}
+
+/* Mobile */
+
+@media (max-width: 1200px) {
+  .colaborador-salario {
+    display: block;
+    width: 900px;
+    align-items: center;
+    overflow-x: scroll;
+  }
+}
+
+@media (max-width: 992px) {
+  .dia-de-pagamento-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  #rodape .rodape .termo p {
+    padding: 5px;
+}
+  #quero-aderir .caixa {
+    width: 100%;
+  }
+
+  .beneficio-celular {
+    text-align: center;
+  }
+
+  .btn-dia-de-pagamento {
+    height: 53px;
+    width: 255px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 16px;
+  }
+
+  .balao {
+    padding: 2px;
+    border: 2px solid black;
+    border-radius: 16px 16px 16px 16px;
+    width: 163px;
+    background-color: #ffffff;
+    color: #2d2935;
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .balao:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: calc(50% - 10px);
+    top: 65px;
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+  }
+
+  #colaborador-feliz .beneficio-celular img {
+    width: 50%;
+    text-align: center;
+  }
+
+  #colaborador-feliz .lista h3 {
+    font-size: 16px;
+  }
+
+  #colaborador-feliz li {
+    font-size: 16px;
+  }
+
+  .colaborador-salario {
+    display: block;
+    width: 900px;
+    align-items: center;
+    overflow-x: scroll;
+  }
+
+  #rodape .row {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #rodape .rodape .rodape-icons {
+    margin-top: 0;
+  }
+
+  #rodape .logo2 {
+    text-align: center;
+  }
+
+  #rodape .termo {
+    text-align: center;
+  }
+
+  #rodape .termo p {
+    text-align: center;
+  }
+
+
+  #rodape .rodape-icons {
+    text-align: center;
+  }
+}
+
+@media (max-width: 769px) { 
+  .dia-de-pagamento-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+  }
+
+  #rodape {
+    margin-top: 56px;
+}
+
+  #colaborador-feliz .texto {
+    text-align: center;
+  }
+
+  .btn-dia-de-pagamento {
+    height: 53px;
+    width: 255px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 16px;
+  }
+
+  .balao {
+    padding: 2px;
+    border: 2px solid black;
+    border-radius: 16px 16px 16px 16px;
+    width: 163px;
+    background-color: #ffffff;
+    color: #2d2935;
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+
+#colaborador-feliz {
+    padding-top: 40px;
+    padding-bottom: 0px;
+}
+
+  #colaborador-feliz .lista {
+    text-align: center;
+  }
+
+  #colaborador-feliz button {
+    width: 100%;
+  }
+
+  #colaborador-feliz .lista h3 {
+    font-size: 16px;
+  }
+
+  #cabecalho .logo {
+    margin: 15px auto;
+  }
+
+  #colaborador-feliz li {
+    font-size: 16px;
+  }
+
+
+  #colaborador-feliz .beneficio-celular  {
+    width: 60%;
+    position: relative;
+    max-width: fit-content;
+    text-align: center;
+    margin: auto;
+}
+
+#colaborador-feliz .img-lista {
+    display: block;
+    margin: auto;
+  }
+
+
+  #colaborador-feliz .beneficio-celular::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    left: 0;
+    bottom: 0px;
+    background: linear-gradient(180deg, #FFFFFF00 10%, #FFFFFF 100%) 0% 0% no-repeat padding-box, linear-gradient(180deg, #FFFFFF00 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+  }
+
+  #como-funciona .seu-salario h2 {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  #como-funciona .seu-salario h2 span {
+    font-size: 16px;
+  }
+
+  #como-funciona .seu-salario p {
+    font-size: 16px;
+  }
+
+  #como-funciona .seu-salario {
+    padding: 0;
+  }
+  #como-funciona .texto h2 {
+    font-size: 24px;
+  }
+
+  #quero-aderir .caixa {
+    height: auto;
+    margin-bottom: 56px;
+  }
+
+  #quero-aderir .texto {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  #como-funciona .colaborador-salario{
+
+    margin-top: 80px;
+  }
+
+  .seu-salario h2 {
+    padding: 40px;
+    font-size: 32px;
+}
+
+  #como-funciona .texto{
+
+    margin-top: 40px;
+    margin-bottom: 0px;
+
+  }
+
+}
+  @media (max-width: 576px) {
+    #cabecalho {
+      justify-content: center;
+    }
+
+    #cabecalho img {
+      margin: 0;
+    }
+
+    .dia-de-pagamento-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 15px;
+    }
+
+    .btn-dia-de-pagamento {
+      height: 53px;
+      width: 255px;
+      border-radius: 10px;
+      margin: 0 auto;
+      margin-top: 16px;
+    }
+
+    .balao {
+      padding: 2px;
+      border-radius: 16px 16px 16px 16px;
+      width: 163px;
+      background-color: #ffffff;
+      color: #2d2935;
+      position: absolute;
+      margin: 0 auto;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .balao:before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: calc(50% - 10px);
+      top: 65px;
+      background: #fff;
+      -webkit-transform: rotate(45deg);
+    }
+
+    #colaborador-feliz h2 {
+      font-size: 24px;
+    }
+
+    #colaborador-feliz .lista h3 {
+      font-size: 16px;
+    }
+
+    #colaborador-feliz .lista li {
+      font-size: 16px;
+    }
+
+    #colaborador-feliz .img-lista {
+      display: block;
+      margin: auto;
+    }
+
+    #colaborador-feliz .texto {
+      text-align: center;
+    }
+
+    .seu-salario {
+      margin-top: 102px;
+    }
+
+    #quero-aderir .caixa {
+      height: auto;
+      margin: 0 auto;
+      margin-top: 40px;
+      margin-bottom: 56px;
+    }
+  }
+
+
+@media (max-width: 425px) {
+  #colaborador-feliz .beneficio-celular {
+    text-align: center;
+  }
+
+  #colaborador-feliz .beneficio-celular img {
+    max-width: 167px;
+    
+  }
+
+  #colaborador-feliz .beneficio-celular {
+    width: 100%;
+    max-width: none;
+}
+
+  #colaborador-feliz .para-o-rh {
+    margin-top: 0;
+  }
+}
+
+/* @media (max-width: 375px) {
+}
+
+@media (max-width: 320px) {
+} */
